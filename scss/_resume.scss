@@ -1,0 +1,245 @@
+ 
+/* Overrides 
+===============================================================================================*/
+body { 
+	letter-spacing: .1em;
+}
+
+.contentwrapper {
+	padding:6em 8% 0 8%;	
+}
+
+section {
+	background:$lightgray;
+	padding:3.25em 4em;
+	margin-bottom:4em;
+
+	.experience {
+		margin-top:2em;
+	}
+}
+
+article {
+	margin:0 0 2% 0;
+	background:$white;
+	padding:3.75em 2em 3em 3.75em;
+	border:1.5em solid $medgray;
+}
+
+a {
+	text-decoration: none;
+	color:$gray;
+}
+
+p {
+	font-size: 1.6em;
+}
+
+
+/* Intro
+===============================================================================================*/
+
+.resume-intro {
+	background:$lightgray;
+	padding:5.5em 5em 3.5em 5em;
+	letter-spacing: normal;
+
+	h2 {
+		span {
+		font-size:0.6em;
+		color:$gray;
+		}
+	}
+
+	p {font-size:2.9em;}	
+}
+
+
+
+/* Header
+===============================================================================================*/
+
+.resume-header {
+	background:$green;
+	padding:0.7em 0.8em 0.8em;
+	color:white;
+	margin-bottom:0.8em;
+}
+
+
+
+/* Resume Entry
+===============================================================================================*/
+
+/*	Header	*/
+
+.position-header {
+	@include n-demi;
+	color: $medgray;
+	width:100%;
+
+	span {
+		color:$gray;
+		font-size:0.8em;
+		@include n-demi;
+	}
+}
+
+
+/*	Title	*/
+
+.position-title {
+	color:$blue;
+}
+
+
+/*	Location	*/
+
+.position-location {
+	width:100%;
+
+	p {
+		@include n-demi;
+		color:$gray;
+		font-size:1.5em;
+	}
+}
+
+
+/*	Description	*/
+
+.position-description {
+	margin-bottom:2em;
+	margin-left:0;
+
+	p {padding-right: 8em;}
+}
+
+
+/*	Clients, Awards & Qualifications	*/
+
+.position-clients {
+	display:inline;
+}
+
+.client-title {
+	width:11%;
+	float:left;
+
+	p {
+		font-size:1.8em;	
+		@include n-demi;
+		margin-top: -0.04em;
+	}
+}
+
+.client-list {
+	width:80%;
+	float:left;
+
+	p {
+		@include os-3;
+		font-size: 1.8em;
+		color:$gray;
+	}
+
+	a {
+		text-decoration: underline;
+		
+		&:hover {color:$red;}
+	}
+}
+
+
+/* Footer
+===============================================================================================*/
+
+.resumefooter {
+	width:100%;
+	text-align:center;
+	font-size:8em;
+	display: inline-block;
+	margin-top:0.3em;
+
+	a {
+		margin-right:1%;
+		margin-left:1%;
+		color:$gray;
+	
+		&:hover {color:$green;}
+	}
+}
+
+
+
+/* RESPONSIVE
+============================================================================================== */
+
+@media screen and (max-width: 1350px) {
+  	.client-title{width:12%;}
+}
+
+@media screen and (max-width: 1250px) {
+  	.client-title{width:13%;}
+}
+
+@media screen and (max-width: 1170px) {
+  	.client-title{width:14%;}
+}
+
+@media screen and (max-width: 1100px) {
+  	.client-title{width:15%;}
+}
+
+@media screen and (max-width: 1055px) {
+  	.client-title{width:16%;}
+}
+
+@media screen and (max-width: 1024px) {
+  	.resume-intro p { font-size:3.9em; }
+  	.position-description p { padding-right: 2em; }
+  	.client-title{ 
+	  	width:100%; 
+	  	
+	  	p { margin-bottom:0.3em; }
+	}
+
+  	.client-list{ width:100%; }
+
+}
+
+@media screen and (max-width: 768px) {
+  	.position-description p {font-size:2.2em; padding-right: 2em;}
+  
+  	.resume-intro {
+	  	h2 {font-size: 3.6em;
+	  		span {font-size:0.5em;}
+	  	}
+	}
+  
+  	.resume-header {text-align: center;}
+}
+
+@media screen and (max-width: 480px) {
+   	.resume-intro {
+	   	padding:4em 2.5em 2em 2.5em; 
+	   	margin-top:1.5em;
+	   	margin-bottom:2.25em;
+
+	   	h2 {
+	   		font-size: 3.1em;
+	   		span {font-size:0.75em;}
+	   	}
+	   	
+	   	p {font-size: 2.2em;}
+   	}
+
+   	.position-description p {padding-right: 0;}
+
+   	.resumefooter {
+	   	margin-top:0;
+	   	margin-bottom: 0.3em;
+
+	   	a { font-size:1em;}
+   	}
+}

@@ -1,0 +1,181 @@
+/* Entries */
+
+.portfolio {
+	
+	article {margin-bottom:5em;}
+
+	.col4 {
+		a {text-decoration: none;}
+	}
+}
+
+.portfolio_header {
+	width:100%;
+	background:$green;
+	margin-top:1em;
+	margin-bottom: 0.75em;
+	padding:1em 0;
+	color:white;
+	text-align: center;
+	font-size: 3em;
+}
+
+.disclaimer {
+	font-style: italic;
+	color:$red !important;
+	font-size:1.5em !important;
+	font-weight: 700;
+	background:lighten($red, 50%);
+	padding:1em;
+	margin-bottom:2em !important;
+	text-align: center;
+}
+
+/* Portfolio Pages
+===============================================================================================*/
+
+.entry {
+	border:solid 1.4em $medgray;
+	padding:4%;
+	color:$gray;
+		
+	img {margin-bottom:1.5em;}
+
+	h4 {
+		color:$gray;
+		@include ease-600;
+	}
+	
+	p {font-size:1.7em;}
+
+	&:hover {
+		background:$green;
+
+		h4 {color:$white;}
+	}
+}
+
+/* Coming Soon
+===============================================================================================*/
+
+.comingsoon {
+	background:$darkgray;
+	opacity:0.35;
+
+	img {
+		filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+	    filter: gray; /* IE5+ */
+	    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	    opacity:0.5;
+	}
+
+	p {color:$gray;}
+
+
+
+	&:hover {
+		background:$darkgray;
+
+		h4 {color:$gray;}
+	}
+}
+
+.exp {
+	text-align:center;
+	padding:5.45em 0;
+
+	h4 {color:$lightgray;}
+
+	&:hover {
+		h4 {color:$lightgray;}
+	}
+}
+
+/* Portfolio Pages
+===============================================================================================*/
+
+.project_intro {
+	margin-bottom:0;
+
+	h2 { margin-bottom:0.25em;}
+
+	h4 {color:$darkgray;}
+}
+
+.main_image {
+	margin-bottom:0;
+}
+
+.project_image {
+	margin-bottom:0;
+}
+
+.caption {
+	text-align: center;
+	background:$medgray;
+	color:$blue!important;
+	font-size:1.4em !important;
+	margin-top:-0.25em;
+	padding: 1em 1em 0.85em 1em;	
+}
+
+.project_subtitle {
+	background:$medgray;
+	padding:0.7em 0.8em 0.8em;
+	color:$blue;
+	margin-top:2em;
+}
+
+.subhead {
+	margin-top:1.8em;
+	margin-bottom:0.75em;
+}
+
+/* wigo
+===============================================================================================*/
+.wigofeat {margin-top:1.5em;}
+
+
+/* over
+===============================================================================================*/
+.overrenderp {
+	margin:3em 0 4em 0;	
+}
+
+/* OLPC
+===============================================================================================*/
+.olpcmainimg {
+	margin-bottom:1.5em;
+}
+
+.olpcfeature {
+	width: 70%;
+	margin-top:3em;
+	margin-left:15%;
+	margin-bottom:2.5em;
+}
+
+/* C4L
+===============================================================================================*/
+
+.c4lsubtitle {
+	margin-top:0.75em;
+}
+
+.c4lfeat {
+	margin-bottom:1.5em;
+}
+
+.c4lsitecol {
+	text-align: center;
+}
+
+.c4lapp {
+	margin-bottom:3em;
+	margin-top:1.5em;
+}
+
+.c4lsite {
+	width:80%;
+	box-shadow:0 2px 5px 1px $gray;
+}

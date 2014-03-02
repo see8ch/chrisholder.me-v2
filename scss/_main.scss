@@ -1,0 +1,261 @@
+
+
+
+/* Media - Fluid Images - Video
+============================================================================================== */
+figure {margin: 0}
+img, object, embed, video {max-width: 100%;	_width: 100%} /* Fluid images */
+img {border: 0;	-ms-interpolation-mode: bicubic} /* Improve IE's resizing of images */
+svg:not(:root) {overflow: hidden} /* Correct IE9 overflow */
+img {height: auto;}
+
+
+
+
+/* Links
+============================================================================================== */
+
+a {
+	color:$red;
+	text-decoration: none;
+	@include ease-600;
+
+	&:focus, &:hover, &:active {outline: 0;}
+
+	&:hover {color:$green;}
+}
+
+
+
+
+/* Headers
+====================================================================================================*/
+
+h1, h2, h3, h4, h5 {
+	margin-bottom:0.5em;
+	color:$blue;
+	@include n-bold;
+	letter-spacing:0.034em;
+}
+
+h1 {font-size:5em;}
+h2 {font-size:4em;}
+h3 {font-size:3em;}
+h4 {font-size:2.5em;}
+h5 {font-size:1em;}
+
+
+
+/* Body Elements
+====================================================================================================*/
+body {
+	height: 100%;
+	background:url('http://www.see8ch.com/images/navy_blue.png');
+	@include os-3;
+	font-size:62.5%;
+	color:$darkgray;
+
+	p {
+		line-height:18px;
+	}
+}
+
+
+
+/* #Containers
+================================================================================================= */
+.container_fixed { /*You can adjust the width here to fit your design. i.e: 980px, 1280px if you wnat a fixed container*/
+	width:1024px;
+	margin: 0 auto;
+	display: table;
+}
+
+.container {
+	width: 100%;
+	margin:0;
+	display: inline-block;
+}
+
+/* Content
+===============================================================================================*/
+
+.content {
+	max-width: 1360px;
+	width:82%;
+	margin:16em auto 10em auto;
+	background-color:white;
+	background-color:rgba(255,255,255,0.97);
+	padding:5em;
+
+	p {
+		font-size:2em;
+		line-height: 1.3em;
+		color:$blue;
+		margin-bottom:1em;
+	}
+}
+
+
+
+/* Sections
+===============================================================================================*/
+
+section {
+	margin-bottom:0em;
+}
+
+
+
+/* Nav & Header
+===============================================================================================*/
+@import "_nav";
+
+
+
+
+/* Portfolio Grid
+===============================================================================================*/
+@import "_portfolio";
+
+.workintro {
+
+	h2 {font-size:3.7em;}
+}
+
+/* About
+===============================================================================================*/
+.headshot {margin-top:3em; border: solid 1.4em #e4e4e4;}
+
+/* Big Icons
+===============================================================================================*/
+
+.bigicon {
+	font-size: 22em;
+	text-align:center;
+	color:$medgray;
+	margin-top:.25em;
+	padding-left:.2em;
+	cursor:crosshair;
+
+	&:hover {
+		color:$yellow;
+	}
+
+	&::selection {
+		background:$lightgray;
+		background: rgba(255,255,255,0.0);
+		color:$red;
+	}
+
+	&::-moz-selection {
+		background:$lightgray;
+		background: rgba(255,255,255,0.0);
+		color:$red;
+	}
+}
+
+
+
+
+
+/* About Page
+===============================================================================================*/
+
+.abouticon {
+	font-size:3em;
+	color: $gray;
+	margin-right:0.5em;
+}
+
+.aboutheader {
+	color:$gray;
+}
+
+.resumelink {
+	margin-bottom:2em !important;
+}
+
+.presslinks {
+	font-size: 1.8em !important;
+}
+/* Contact Page
+===============================================================================================*/
+
+.contactcol {
+	text-align: center;
+
+	p {
+		font-weight:700;
+		font-size:1.4em;
+	}
+}
+
+.contacticon {
+	margin-top:.25em;
+	padding-left:0;
+	color:$red;
+	font-size: 22em;
+
+	&:hover {
+		color:$yellow;
+	}
+}
+
+/* Footer
+===============================================================================================*/
+
+.footer {
+	text-align: center;
+	margin-bottom:1.7em;
+
+
+	p {font-size:1.3em; letter-spacing: 0;}
+
+	a {
+		color:$white;
+
+		&:hover {color:$green;}
+	}
+}
+
+/* Selection
+================================================================================================= */
+
+::selection {
+	background:$yellow;
+}
+
+::-moz-selection {
+	background:$yellow;
+}
+
+
+
+/* Clear
+----------------------------------------------------------------------------------------------------*/
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix {display: inline-block;}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}

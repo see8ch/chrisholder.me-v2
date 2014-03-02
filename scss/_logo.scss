@@ -1,0 +1,57 @@
+
+/* Logo
+===============================================================================================*/
+$height: 45px;
+$border: $height / 6.3;
+$logocolor: #fafafa;
+
+.logowindow {
+	width: 25%;
+	overflow-x: hidden;
+	float: left;
+}
+.logowrapper {
+	height:$height;
+	width:$height * 2.14;
+	margin:23px 0 39px 0;
+	padding-right:16px;
+
+	.logobox {
+		width:100%;
+		height:100%;
+		border:solid $border $logocolor;
+
+		.logoc {
+			height:14%;
+			width:25%;
+			background:$logocolor;
+			float:left;
+			margin-top:22%;
+			margin-left:26%;
+		}
+
+		.logoh {
+			width:8%;
+			height:30%;
+			background:$logocolor;
+			float:right;
+			margin-right:20%;
+		}
+
+		.lh1 {
+		  	margin-top:0;
+		}
+
+		.lh2 {
+		  	margin-top:20%;
+		}
+	}
+
+	&:hover{
+		.logobox {
+			background:$blue;
+		}
+	}
+}
+
+

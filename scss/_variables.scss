@@ -1,0 +1,114 @@
+
+/* Novecento
+================================================================================================= */ 
+
+@font-face {font-family: 'Novecentowide-Bold';src: url('/fonts/novecento/25DFFC_0_0.eot');src: url('/fonts/novecento/25DFFC_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/novecento/25DFFC_0_0.woff') format('woff'),url('/fonts/novecento/25DFFC_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Novecentowide-Light';src: url('/fonts/novecento/25DFFC_1_0.eot');src: url('/fonts/novecento/25DFFC_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/novecento/25DFFC_1_0.woff') format('woff'),url('/fonts/novecento/25DFFC_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Novecentowide-DemiBold';src: url('/fonts/novecento/25DFFC_2_0.eot');src: url('/fonts/novecento/25DFFC_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/novecento/25DFFC_2_0.woff') format('woff'),url('/fonts/novecento/25DFFC_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Novecentowide-Book';src: url('/fonts/novecento/25DFFC_3_0.eot');src: url('/fonts/novecento/25DFFC_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/novecento/25DFFC_3_0.woff') format('woff'),url('/fonts/novecento/25DFFC_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Novecentowide-Normal';src: url('/fonts/novecento/25DFFC_4_0.eot');src: url('/fonts/novecento/25DFFC_4_0.eot?#iefix') format('embedded-opentype'),url('/fonts/novecento/25DFFC_4_0.woff') format('woff'),url('/fonts/novecento/25DFFC_4_0.ttf') format('truetype');}
+@font-face {font-family: 'Novecentowide-Medium';src: url('/fonts/novecento/25DFFC_5_0.eot');src: url('/fonts/novecento/25DFFC_5_0.eot?#iefix') format('embedded-opentype'),url('/fonts/novecento/25DFFC_5_0.woff') format('woff'),url('/fonts/novecento/25DFFC_5_0.ttf') format('truetype');}
+
+
+@mixin n-bold { font-family:'Novecentowide-Bold'; }
+
+@mixin n-demi { font-family:'Novecentowide-Demibold'; }
+
+@mixin n-med { font-family:'Novecentowide-Medium'; }
+
+@mixin n-book { font-family:'Novecentowide-Book'; }
+
+@mixin n-norm { font-family:'Novecentowide-Normal'; }
+
+@mixin n-light { font-family:'Novecentowide-Light'; }
+
+
+
+/* Open Sans
+================================================================================================= */
+
+@mixin os-7 {
+	font-family:'Open Sans';
+	font-weight:700;
+}
+
+@mixin os-4 {
+	font-family:'Open Sans';
+	font-weight:400;
+}
+
+@mixin os-3 {
+	font-family:'Open Sans';
+	font-weight:300;
+}
+
+
+
+/* Colors
+================================================================================================= */
+
+$green:#2ECC71;
+
+$darkgreen:#24ad5f;
+
+$blue:#34495E;
+
+$darkgray:#999;
+
+$gray:#bcbcbc;
+
+$medgray:#e4e4e4;
+
+$lightgray:#f3f3f3;
+
+$white:#fafafa;
+
+$red:#C0392B;
+
+$yellow:#F39C12;
+
+
+
+/* Transition Times
+================================================================================================= */
+
+@mixin ease-1000 {	
+	$time:1000ms;
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+@mixin ease-600 {	
+	$time:600ms;
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+@mixin ease-500 {	
+	$time:500ms;
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+
+/* Ease and Shadow
+================================================================================================= */
+
+.ease {
+	@include ease-600;
+}
+
+.shadow {
+	$shadow:0px 1px 7px 2px #c2c2c2;
+ 	-webkit-box-shadow: $shadow;
+ 	box-shadow: $shadow;
+}

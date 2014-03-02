@@ -1,0 +1,74 @@
+
+/* Nav
+===============================================================================================*/
+
+nav {
+	text-align:right;
+	width:75%;
+	float:right;
+	margin-top: 29px;
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin-right: 0.75%;
+			margin-left: 0.1%;
+
+			a {
+				display: inline-block;
+				text-decoration:none;
+				@include n-bold;
+				font-size:2em;
+				letter-spacing:0.062em;
+				color:$lightgray;
+				padding:.7em .85em .8em .85em;
+			}
+		}
+	}
+
+	select {display: none;}
+}
+
+
+.slash:after {
+	content:"//";
+	margin-left:.7em;
+	@include n-bold;
+	font-size:2em;
+	@include ease-600;
+	color:$lightgray;
+	color:rgba(255,255,255,0.4);
+}
+
+/* Header
+===============================================================================================*/
+.header {
+	$padding:4%;
+
+	background:$green;
+	width:100% ;
+	position:absolute;
+	top:0;
+	padding:0;
+
+	&:hover {
+		background-color:$green;
+
+		nav ul li a {
+			color:$lightgray;
+
+			&:hover {background:$darkgreen;}
+		}
+	}
+	.nav-wrapper {
+		width:100% - ($padding * 2);
+		max-width:1463px;
+		margin:0 auto;
+	}
+}
+
+
+
+
